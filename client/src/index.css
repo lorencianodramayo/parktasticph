@@ -1,5 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Exo", sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -13,13 +15,21 @@
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: "Exo", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 img {
   width: -webkit-fill-available;
+}
+
+.menu-container {
+  background: transparent;
+  border: 0;
+}
+
+.menu-container > .ant-menu-item-selected::after {
+  border-bottom-width: 0 !important;
+  border-bottom-color: transparent !important;
 }

@@ -25,11 +25,15 @@ export const headerNavigation = [
     key: "/",
   },
   {
-    label: <Link to="/about-us">The LGU</Link>,
-    key: "/about-us",
+    label: <Link to="/the-lgu">The LGU</Link>,
+    key: "/the-lgu",
   },
   {
-    label: <Link to="/how-it-works">The Team</Link>,
-    key: "/how-it-works",
+    label: <Link to="/the-business">The Business</Link>,
+    key: "/the-business",
+  },
+  {
+    label: <Link to="/the-team">The Team</Link>,
+    key: "/the-team",
   },
 ];

@@ -5,12 +5,14 @@ import { Button, Card, Col, Input, Row, Space, Typography } from "antd";
 import headerBackground from "../../assets/images/park1.jpg";
 import footerBackground from "../../assets/images/bgc1.jpg";
 
-import realTime from "../../assets/images/home/real-time-parking.jpg";
+import realTime from "../../assets/images/consumers/available-parking.svg";
 import payParking from "../../assets/images/home/pay-parking.jpg";
 import security from "../../assets/images/home/security.jpg";
 import perks from "../../assets/images/home/perks.jpg";
 
-export default function Home() {
+import banner from "../../assets/images/consumers/consumer-banner.png";
+
+export default function TheConsumers() {
   return (
     <>
       {/* body 1  */}
@@ -28,7 +30,7 @@ export default function Home() {
         <div
           style={{
             position: "absolute",
-            background: `url(${headerBackground})`,
+            background: `url(${banner})`,
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
             backgroundPositionX: "center",
@@ -37,23 +39,47 @@ export default function Home() {
             filter: "brightness(0.5)",
           }}
         />
-        <Typography.Title style={{ margin: 0, zIndex: 1, color: "#fff" }}>
+        <Typography.Title
+          style={{
+            margin: 0,
+            zIndex: 1,
+            color: "#fff",
+            fontWeight: 800,
+            fontSize: "50px",
+          }}
+        >
           Say goodbye to parking hassles in
         </Typography.Title>
-        <Typography.Title style={{ margin: 0, zIndex: 1, color: "#f6c64d" }}>
+        <Typography.Title
+          style={{
+            margin: 0,
+            zIndex: 1,
+            color: "#f6c64d",
+            fontWeight: 800,
+            fontSize: "50px",
+          }}
+        >
           Metro manila
         </Typography.Title>
 
         <div
           style={{
             zIndex: 1,
-            width: "550px",
+            width: "753px",
             marginBottom: "3em",
             marginTop: "2em",
           }}
         >
-          <Typography.Title level={4} style={{ margin: 0, color: "#fff" }}>
-            Parktastic PH gives you the power to create your own fantastic
+          <Typography.Title
+            level={4}
+            style={{
+              margin: 0,
+              color: "#fff",
+              fontSize: "26px",
+              fontWeight: 500,
+            }}
+          >
+            PARKTASTIC PH gives you the power to create your own fantastic
             parking experience.
           </Typography.Title>
         </div>
@@ -61,12 +87,21 @@ export default function Home() {
           style={{
             width: "550px",
             zIndex: 1,
+            fontWeight: 600,
           }}
         >
-          <Space.Compact style={{ width: "100%" }} size="large">
-            <Input placeholder="Your Email..." />
-            <Button type="primary">Become Praktastic Buddy</Button>
-          </Space.Compact>
+          <Button
+            type="primary"
+            style={{
+              fontSize: "18px",
+              lineHeight: "18px",
+              padding: "16px, 58px, 16px, 58px",
+              borderRadius: "100px",
+            }}
+            size="large"
+          >
+            Become PARKTASTIC Buddy
+          </Button>
         </div>
       </div>
       {/* body 2 */}

@@ -11,7 +11,7 @@ const Main = () => {
   return (
     <Layout className="layout">
       <SiteHeader headerNavigation={headerNavigation} />
-      <Content style={{ minHeight: "calc(100vh - 9em)" }}>
+      <Content style={{ minHeight: "calc(100vh - 9em)", marginTop: "64px" }}>
         <Outlet />
       </Content>
       <SiteFooter footerNavigation={footerNavigation} />
