@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 import PropTypes from "prop-types";
 
@@ -11,6 +11,11 @@ const { Header } = Layout;
 
 export default function SiteHeader({ headerNavigation }) {
   const location = useLocation();
+  const [path, setPath] = useState("/");
+
+  useEffect(() => {
+    setPath(location?.pathname);
+  }, [location]);
 
   return (
     <Header
@@ -53,7 +58,7 @@ export default function SiteHeader({ headerNavigation }) {
       <Menu
         theme="light"
         mode="horizontal"
-        defaultSelectedKeys={location?.pathname}
+        selectedKeys={path}
         items={headerNavigation}
         disabledOverflow={true}
         style={{
