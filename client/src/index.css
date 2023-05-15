@@ -44,3 +44,15 @@ img {
   position: relative;
   box-shadow: inset 0px -0.33em #f5c64e;
 }
+
+.lgu-header {
+  text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+  font-style: normal;
+  font-weight: 900;
+  font-size: 31px;
+  letter-spacing: 0.01em;
+  color: #ffffff;
+  line-height: 60px;
+  align-items: center;
+  display: flex;
+}

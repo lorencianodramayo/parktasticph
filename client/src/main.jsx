@@ -13,7 +13,6 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         token: {
           fontFamily: "Exo, sans-serif",
           colorPrimary: "#8FBE61",
-          colorPrimaryText: "#8FBE61"
         },
         components: {
           Typography: {
