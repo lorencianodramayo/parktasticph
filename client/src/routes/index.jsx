@@ -1,12 +1,14 @@
+import React, { lazy } from "react";
+
 import { createBrowserRouter } from "react-router-dom";
 
-import Main from "../pages/Main";
-import TheConsumers from "../pages/TheConsumers";
-import TheLgu from "../pages/TheLgu";
-import ErrorPage from "../pages/ErrorPage";
-import AboutUs from "../pages/AboutUs";
-import TheBusiness from "../pages/TheBusiness";
-import Pager from "../components/Common/Pager";
+const Main = lazy(() => import("../pages/Main"));
+const TheConsumers = lazy(() => import("../pages/TheConsumers"));
+const TheLgu = lazy(() => import("../pages/TheLgu"));
+const ErrorPage = lazy(() => import("../pages/ErrorPage"));
+const AboutUs = lazy(() => import("../pages/AboutUs"));
+const TheBusiness = lazy(() => import("../pages/TheBusiness"));
+const Pager = lazy(() => import("../components/Common/Pager"));
 
 const router = createBrowserRouter([
   {
