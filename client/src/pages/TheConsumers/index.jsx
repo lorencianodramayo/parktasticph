@@ -2,15 +2,19 @@ import React from "react";
 
 import { Button, Card, Col, Input, Row, Space, Typography } from "antd";
 
-import headerBackground from "../../assets/images/park1.jpg";
 import footerBackground from "../../assets/images/bgc1.jpg";
 
-import realTime from "../../assets/images/consumers/available-parking.svg";
+import realTime from "../../assets/images/consumers/available-parking.png";
 import payParking from "../../assets/images/home/pay-parking.jpg";
 import security from "../../assets/images/home/security.jpg";
 import perks from "../../assets/images/home/perks.jpg";
 
 import banner from "../../assets/images/consumers/consumer-banner.png";
+import patern1 from "../../assets/images/consumers/patern1.svg";
+import patern2 from "../../assets/images/consumers/patern2.svg";
+import car from "../../assets/images/consumers/car.png";
+
+import { Link } from "react-router-dom";
 
 export default function TheConsumers() {
   return (
@@ -90,24 +94,70 @@ export default function TheConsumers() {
             fontWeight: 600,
           }}
         >
-          <Button
-            type="primary"
-            style={{
-              fontSize: "18px",
-              lineHeight: "18px",
-              padding: "16px, 58px, 16px, 58px",
-              borderRadius: "100px",
-            }}
-            size="large"
+          <Link
+            to="https://55qvxzcjpn2.typeform.com/to/mFn3BFdY "
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            Become PARKTASTIC Buddy
-          </Button>
+            <Button
+              type="primary"
+              style={{
+                fontSize: "18px",
+                lineHeight: "18px",
+                padding: "16px, 58px, 16px, 58px",
+                borderRadius: "100px",
+              }}
+              size="large"
+            >
+              Become PARKTASTIC Buddy
+            </Button>
+          </Link>
+        </div>
+      </div>
+
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "space-between",
+          padding: "113px 75px 0",
+        }}
+      >
+        <div style={{ position: "absolute", top: "40.5em", left: 0 }}>
+          <img
+            src={car}
+            alt="car-model"
+            style={{ width: "350px", height: "auto" }}
+          />
+        </div>
+        <div
+          style={{
+            backgroundImage: `url(${patern1}), url(${patern2}) `,
+            backgroundRepeat: "no-repeat",
+            backgroundPosition: "left, right",
+            height: "184px",
+            width: "100%",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            fontStyle: "italic",
+            fontWeight: 800,
+            fontSize: "50px",
+            textAlign: "center",
+            color: "#6BB42F",
+          }}
+        >
+          <div
+            style={{ width: "686px", lineHeight: "56.65px" }}
+            className="border-span"
+          >
+            FUNTASTIC DAY BEGINS WITH <span>PARKTASTIC PH!</span>
+          </div>
         </div>
       </div>
       {/* body 2 */}
       <div
         style={{
-          minHeight: "calc(100vh - 64px)",
+          minHeight: "calc(100vh - 150px)",
           display: "flex",
           justifyContent: "center",
           flexDirection: "column",

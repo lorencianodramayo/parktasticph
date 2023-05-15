@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Exo:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,800&display=swap");
 
 :root {
   font-family: "Exo", sans-serif;
@@ -32,4 +32,15 @@ img {
 .menu-container > .ant-menu-item-selected::after {
   border-bottom-width: 0 !important;
   border-bottom-color: transparent !important;
+}
+
+.menu-container > .ant-menu-item:hover::after {
+  border-bottom-width: 0 !important;
+  border-bottom-color: transparent !important;
+}
+
+.border-span span {
+  display: inline-block;
+  position: relative;
+  box-shadow: inset 0px -0.33em #f5c64e;
 }
