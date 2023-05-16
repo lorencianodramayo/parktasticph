@@ -20,10 +20,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-img {
-  width: -webkit-fill-available;
-}
-
 .menu-container {
   background: transparent;
   border: 0;

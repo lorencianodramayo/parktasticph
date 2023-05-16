@@ -3,11 +3,15 @@ import { Link } from "react-router-dom";
 import car from "../../assets/images/lgu/car.png";
 import { Typography, Button, Row, Col } from "antd";
 
+import MinimalCarousel from "../../components/MinimalCarousel";
+
 import pattern1 from "../../assets/images/lgu/pattern1.svg";
 import pattern2 from "../../assets/images/lgu/pattern2.svg";
 import pattern3 from "../../assets/images/lgu/pattern3.svg";
 import benefit from "../../assets/images/lgu/benefit.png";
 import metro from "../../assets/images/lgu/metro.png";
+import park from "../../assets/images/lgu/park.png";
+import shed from "../../assets/images/lgu/shed.png";
 
 export default function TheLgu() {
   return (
@@ -194,6 +198,105 @@ export default function TheLgu() {
           >
             <img
               src={metro}
+              alt="real-time parking"
+              style={{
+                width: "-webkit-fill-available",
+                height: "auto",
+                borderRadius: "2em",
+              }}
+            />
+          </Col>
+        </Row>
+      </div>
+      {/* body 4 */}
+      <div
+        style={{
+          minHeight: "calc(100vh - 150px)",
+          display: "flex",
+          justifyContent: "center",
+          flexDirection: "column",
+          background: "#fff",
+        }}
+      >
+        <Row style={{ padding: "5em 10em" }}>
+          <Col
+            span={24}
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              flexDirection: "column",
+            }}
+          >
+            <MinimalCarousel />
+            <div style={{ marginTop: "15em" }}>
+              <Typography.Title
+                level={4}
+                style={{
+                  color: "#777777",
+                  fontWeight: 500,
+                  fontSize: "21px",
+                  margin: 0,
+                  width: "1034px",
+                }}
+              >
+                With PARKTASTIC PH, not only do LGUs gain access to our
+                innovative parking platform, but we also{" "}
+                <span style={{ color: "#6BB42F" }}>
+                  provide designated outposts or areas to enhance the visibility
+                  of our barangay partners
+                </span>
+                , fostering a stronger connection with the community they serve.
+              </Typography.Title>
+            </div>
+          </Col>
+        </Row>
+      </div>
+      {/* body 5 */}
+      <div
+        style={{
+          minHeight: "calc(100vh - 150px)",
+          display: "flex",
+          justifyContent: "center",
+          flexDirection: "column",
+        }}
+      >
+        <Row style={{ padding: "5em 15em" }}>
+          <Col
+            span={24}
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              flexDirection: "column",
+            }}
+          >
+            <Typography.Title
+              style={{
+                color: "rgba(31, 41, 55, 0.85)",
+                fontWeight: 700,
+                fontSize: "36px",
+              }}
+            >
+              Steer towards the full potential of street spaces with{" "}
+              <span style={{ color: "#6BB42F" }}>PARKTASTIC PH PH&apos;s</span>{" "}
+              adaptive platform!
+            </Typography.Title>
+            <Typography.Title
+              level={4}
+              style={{
+                color: "#777777",
+                fontWeight: 500,
+                fontSize: "21px",
+                margin: 0,
+                marginBottom: "2em",
+              }}
+            >
+              Our platform integrates with evolving mobility trends such as
+              micromobility and shared mobility networks
+            </Typography.Title>
+            <img
+              src={park}
               alt="real-time parking"
               style={{
                 width: "-webkit-fill-available",

@@ -46,7 +46,7 @@ export default function SiteHeader({ headerNavigation }) {
           <Typography
             style={{
               textTransform: "uppercase",
-              fontWeight: 600,
+              fontWeight: 700,
               fontSize: "12px",
               marginLeft: "6px",
             }}

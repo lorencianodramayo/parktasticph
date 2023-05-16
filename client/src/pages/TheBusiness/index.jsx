@@ -220,7 +220,7 @@ export default function TheBusiness() {
       {/* body 4 */}
       <div
         style={{
-          minHeight: "calc(100vh - 64px)",
+          minHeight: "calc(100vh - 168px)",
           display: "flex",
           justifyContent: "center",
           flexDirection: "column",
