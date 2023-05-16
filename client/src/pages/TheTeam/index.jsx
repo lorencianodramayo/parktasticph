@@ -298,7 +298,7 @@ export default function TheTeam() {
               <div
                 style={{
                   position: "absolute",
-                  bottom: 64,
+                  bottom: 57,
                   right: 60,
                   textAlign: "right",
                   zIndex: 1,
