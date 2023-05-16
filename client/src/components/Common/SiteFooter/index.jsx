@@ -1,14 +1,22 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 import PropTypes from "prop-types";
 
 import { Layout, Typography } from "antd";
 
 import logo from "../../../assets/images/logo.png";
+import { useLocation } from "react-router-dom";
 
 const { Footer } = Layout;
 
 export default function SiteFooter({ footerNavigation }) {
+  const location = useLocation();
+  const [path, setPath] = useState("/");
+
+  useEffect(() => {
+    setPath(location?.pathname);
+  }, [location]);
+
   return (
     <Footer
       style={{
@@ -37,9 +45,10 @@ export default function SiteFooter({ footerNavigation }) {
               style={{
                 fontWeight: 700,
                 textTransform: "uppercase",
-                color: "#6b7280",
+                textDecoration: data?.key === path ? "underline" : "none",
                 fontSize: 10,
               }}
+              className="footer-links"
             >
               {data?.label}
             </Typography>
@@ -60,7 +69,7 @@ export default function SiteFooter({ footerNavigation }) {
           style={{ width: "20px", height: "auto" }}
         />
         <Typography style={{ fontWeight: 700, marginLeft: "6px" }}>
-          PARKTASTICPH
+          PARKTASTIC PH
         </Typography>
       </div>
       <div style={{ margin: "0.5em 0 0 0" }}>

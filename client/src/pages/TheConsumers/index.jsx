@@ -110,7 +110,7 @@ export default function TheConsumers() {
               }}
               size="large"
             >
-              Become PARKTASTIC Buddy
+              Join the waitlist
             </Button>
           </Link>
         </div>
@@ -165,7 +165,14 @@ export default function TheConsumers() {
         }}
       >
         <Row style={{ padding: "0px 10em" }}>
-          <Col span={12}>
+          <Col
+            span={12}
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "center",
+            }}
+          >
             <Typography.Title
               style={{ color: "#6BB42F", fontWeight: 700, fontSize: "36px" }}
             >
@@ -236,7 +243,16 @@ export default function TheConsumers() {
               }}
             />
           </Col>
-          <Col span={12} style={{ textAlign: "right" }}>
+          <Col
+            span={12}
+            style={{
+              textAlign: "right",
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "center",
+              alignItems: "flex-end",
+            }}
+          >
             <Typography.Title
               style={{ color: "#6BB42F", fontWeight: 700, fontSize: "36px" }}
             >
@@ -271,7 +287,14 @@ export default function TheConsumers() {
         }}
       >
         <Row style={{ padding: "0px 10em" }}>
-          <Col span={12}>
+          <Col
+            span={12}
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "center",
+            }}
+          >
             <Typography.Title
               style={{ color: "#6BB42F", fontWeight: 700, fontSize: "36px" }}
             >
@@ -341,7 +364,16 @@ export default function TheConsumers() {
               }}
             />
           </Col>
-          <Col span={12} style={{ textAlign: "right" }}>
+          <Col
+            span={12}
+            style={{
+              textAlign: "right",
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "center",
+              alignItems: "flex-end",
+            }}
+          >
             <Typography.Title
               style={{ color: "#6BB42F", fontWeight: 700, fontSize: "36px" }}
             >
@@ -376,7 +408,14 @@ export default function TheConsumers() {
         }}
       >
         <Row style={{ padding: "0px 10em" }}>
-          <Col span={12}>
+          <Col
+            span={12}
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "center",
+            }}
+          >
             <Typography.Title
               style={{ color: "#6BB42F", fontWeight: 700, fontSize: "36px" }}
             >
@@ -492,18 +531,20 @@ export default function TheConsumers() {
             zIndex: 1,
           }}
         >
-          <Button
-            type="primary"
-            style={{
-              fontSize: "18px",
-              lineHeight: "18px",
-              padding: "16px, 58px, 16px, 58px",
-              borderRadius: "100px",
-            }}
-            size="large"
-          >
-            Learn more
-          </Button>
+          <Link to="/the-lgu">
+            <Button
+              type="primary"
+              style={{
+                fontSize: "18px",
+                lineHeight: "18px",
+                padding: "16px, 58px, 16px, 58px",
+                borderRadius: "100px",
+              }}
+              size="large"
+            >
+              Learn more
+            </Button>
+          </Link>
         </div>
       </div>
     </>

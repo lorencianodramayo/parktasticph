@@ -44,7 +44,7 @@ body {
 .border-span-white {
   display: inline-block;
   position: relative;
-  box-shadow: inset 0px -0.33em #6BB42F;
+  box-shadow: inset 0px -0.33em #6bb42f;
 }
 
 .lgu-header {
@@ -57,4 +57,20 @@ body {
   line-height: 60px;
   align-items: center;
   display: flex;
+}
+
+.footer-links > a {
+  color: #6b7280 !important;
+}
+
+.footer-links > a:hover {
+  color: #8fbe61 !important;
+}
+
+.thumbnails {
+  justify-content: center;
+}
+.active-thumbnail {
+  border: #6bb42f solid 3px !important;
+  border-radius: 1em;
 }

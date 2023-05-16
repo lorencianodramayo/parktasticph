@@ -51,7 +51,7 @@ export default function SiteHeader({ headerNavigation }) {
               marginLeft: "6px",
             }}
           >
-            Parktasticph
+            Parktastic ph
           </Typography>
         </div>
       </Link>

@@ -2,20 +2,24 @@ import { Link } from "react-router-dom";
 
 export const footerNavigation = [
   {
-    label: "About Us",
-    slug: "about-us",
+    label: <Link to="/the-team">About Us</Link>,
+    slug: "the-team",
+    key: "/the-team",
   },
   {
-    label: "Contact Us",
+    label: <Link to="/contact-us">Contact Us</Link>,
     slug: "contact-us",
+    key: "/contact-us",
   },
   {
-    label: "Terms & Conditions",
+    label: <Link to="/terms-and-conditions">Terms &amp; Conditions</Link>,
     slug: "terms-and-conditions",
+    key: "/terms-and-conditions",
   },
   {
-    label: "Privacy Policy",
+    label: <Link to="/privacy-policy">Privacy Policy</Link>,
     slug: "privacy-policy",
+    key: "/privacy-policy",
   },
 ];
 

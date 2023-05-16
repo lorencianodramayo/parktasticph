@@ -44,10 +44,11 @@ export default function TheBusiness() {
               fontWeight: 600,
               color: "#fff",
               width: "650px",
+              marginTop: "20px",
             }}
           >
             What if you could earn revenue and increase the value of your land
-            while searchingfor the perfect buyer?
+            while searching for the perfect buyer?
           </Typography>
           <div style={{ display: "flex", marginTop: "20px" }}>
             <Link
@@ -68,7 +69,7 @@ export default function TheBusiness() {
                 size="large"
                 shape="round"
               >
-                Explore
+                Join the waitlist
               </Button>
             </Link>
           </div>
@@ -130,7 +131,7 @@ export default function TheBusiness() {
                 float: "right",
               }}
             >
-              <span style={{ color: "#6BB42F" }}>PARKTASTIC PH.</span> helps you
+              <span style={{ color: "#6BB42F" }}>PARKTASTIC PH</span> helps you
               with your short-term challenge.
             </Typography.Title>
             <Typography.Title
@@ -276,20 +277,27 @@ export default function TheBusiness() {
               Join us!
             </Typography.Title>
             <div style={{ display: "flex", marginTop: "30px" }}>
-              <Button
-                type="primary"
-                style={{
-                  fontSize: "18px",
-                  lineHeight: "18px",
-                  padding: "16px, 58px, 16px, 58px",
-                  borderRadius: "100px",
-                  backgroundColor: "#F5C64E",
-                }}
-                size="large"
-                shape="round"
+              <Link
+                to="https://55qvxzcjpn2.typeform.com/to/XbNgvfMS"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ display: "flex" }}
               >
-                Request A Demo
-              </Button>
+                <Button
+                  type="primary"
+                  style={{
+                    fontSize: "18px",
+                    lineHeight: "18px",
+                    padding: "16px, 58px, 16px, 58px",
+                    borderRadius: "100px",
+                    backgroundColor: "#F5C64E",
+                  }}
+                  size="large"
+                  shape="round"
+                >
+                  Join the waitlist
+                </Button>
+              </Link>
             </div>
           </Col>
           <Col

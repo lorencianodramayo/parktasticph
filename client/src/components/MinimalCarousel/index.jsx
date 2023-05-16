@@ -1,17 +1,20 @@
 import { Carousel } from "react-carousel-minimal";
 import shed from "../../assets/images/lgu/shed.png";
+import shed1 from "../../assets/images/lgu/shed1.jpg";
+import shed2 from "../../assets/images/lgu/shed2.jpg";
+import shed3 from "../../assets/images/lgu/shed3.gif";
 
 function MinimalCarousel() {
   const data = [
     {
-      image: shed,
+      image: shed1,
     },
     {
-        image: shed,
-      },
-      {
-        image: shed,
-      },
+      image: shed2,
+    },
+    {
+      image: shed3,
+    },
   ];
 
   const captionStyle = {
@@ -43,11 +46,11 @@ function MinimalCarousel() {
             slideBackgroundColor="darkgrey"
             slideImageFit="cover"
             thumbnails={true}
-            thumbnailWidth="400px"
+            thumbnailWidth="200px"
             style={{
               textAlign: "center",
               maxWidth: "1203px",
-              maxHeight: "562px",
+              maxHeight: "auto",
               margin: "40px auto",
             }}
           />

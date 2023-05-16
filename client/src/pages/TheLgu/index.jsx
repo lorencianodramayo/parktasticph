@@ -11,7 +11,6 @@ import pattern3 from "../../assets/images/lgu/pattern3.svg";
 import benefit from "../../assets/images/lgu/benefit.png";
 import metro from "../../assets/images/lgu/metro.png";
 import park from "../../assets/images/lgu/park.png";
-import shed from "../../assets/images/lgu/shed.png";
 
 export default function TheLgu() {
   return (
@@ -66,7 +65,7 @@ export default function TheLgu() {
                 size="large"
                 shape="round"
               >
-                Request A Demo
+                Join the waitlist
               </Button>
             </Link>
           </div>
@@ -229,7 +228,7 @@ export default function TheLgu() {
             }}
           >
             <MinimalCarousel />
-            <div style={{ marginTop: "15em" }}>
+            <div>
               <Typography.Title
                 level={4}
                 style={{
@@ -279,7 +278,7 @@ export default function TheLgu() {
               }}
             >
               Steer towards the full potential of street spaces with{" "}
-              <span style={{ color: "#6BB42F" }}>PARKTASTIC PH PH&apos;s</span>{" "}
+              <span style={{ color: "#6BB42F" }}>PARKTASTIC PH&apos;s</span>{" "}
               adaptive platform!
             </Typography.Title>
             <Typography.Title

@@ -2,6 +2,8 @@ import React from "react";
 
 import { Button, Card, Col, Input, Row, Space, Typography } from "antd";
 
+import { LinkedinOutlined } from "@ant-design/icons";
+
 import teamBanner from "../../assets/images/team/team-banner.png";
 import pattern1 from "../../assets/images/team/pattern1.svg";
 import pattern2 from "../../assets/images/team/pattern2.svg";
@@ -188,6 +190,18 @@ export default function TheTeam() {
                 >
                   The Operations Efficiency Conductor on Urbanization
                 </Typography>
+                <Link
+                  to="https://www.linkedin.com/in/engrjcaseres/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Button
+                    type="primary"
+                    shape="circle"
+                    style={{ backgroundColor: "#0171ae" }}
+                    icon={<LinkedinOutlined />}
+                  />
+                </Link>
               </div>
               <img
                 src={jomar}
@@ -244,6 +258,18 @@ export default function TheTeam() {
                 >
                   Business Developer on Urban and Rural Linkage
                 </Typography>
+                <Link
+                  to="https://www.linkedin.com/in/zarasee/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Button
+                    type="primary"
+                    shape="circle"
+                    style={{ backgroundColor: "#0171ae" }}
+                    icon={<LinkedinOutlined />}
+                  />
+                </Link>
               </div>
               <img
                 src={zara}
@@ -274,7 +300,7 @@ export default function TheTeam() {
                   position: "absolute",
                   bottom: 64,
                   right: 60,
-                  textAlign: "center",
+                  textAlign: "right",
                   zIndex: 1,
                 }}
               >
@@ -300,6 +326,18 @@ export default function TheTeam() {
                 >
                   The Compliance Officer
                 </Typography>
+                <Link
+                  to="https://www.linkedin.com/in/sherwin-james-veluz-a85a61a6/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Button
+                    type="primary"
+                    shape="circle"
+                    style={{ backgroundColor: "#0171ae" }}
+                    icon={<LinkedinOutlined />}
+                  />
+                </Link>
               </div>
               <img
                 src={james}
