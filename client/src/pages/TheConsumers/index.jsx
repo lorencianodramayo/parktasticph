@@ -96,7 +96,7 @@ export default function TheConsumers() {
           }}
         >
           <Link
-            to="https://55qvxzcjpn2.typeform.com/to/mFn3BFdY "
+            to="https://55qvxzcjpn2.typeform.com/to/mFn3BFdY"
             target="_blank"
             rel="noopener noreferrer"
           >
