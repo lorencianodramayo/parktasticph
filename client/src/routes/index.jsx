@@ -6,7 +6,7 @@ const Main = lazy(() => import("../pages/Main"));
 const TheConsumers = lazy(() => import("../pages/TheConsumers"));
 const TheLgu = lazy(() => import("../pages/TheLgu"));
 const ErrorPage = lazy(() => import("../pages/ErrorPage"));
-const AboutUs = lazy(() => import("../pages/AboutUs"));
+const TheTeam = lazy(() => import("../pages/TheTeam"));
 const TheBusiness = lazy(() => import("../pages/TheBusiness"));
 const Pager = lazy(() => import("../components/Common/Pager"));
 
@@ -25,7 +25,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/the-team",
-        element: <Pager content={<AboutUs />} title="The Team" />,
+        element: <Pager content={<TheTeam />} title="The Team" />,
       },
       {
         path: "/the-business",
