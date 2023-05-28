@@ -97,7 +97,7 @@ export default function TheTeam() {
         </div>
       </div>
 
-      <Row>
+      <Row style={{ overflow: "hidden" }}>
         {/* Jomar */}
         <Col
           md={8}
@@ -108,7 +108,7 @@ export default function TheTeam() {
           className="team-container-first"
         >
           <Row style={{ display: "flex", alignItems: "flex-end" }}>
-            <Col style={{ display: "flex" }}>
+            <Col style={{ display: "flex" }} className="team-column">
               <div className="team-jomar">
                 <Typography.Title
                   level={2}
@@ -168,7 +168,7 @@ export default function TheTeam() {
           className="team-container"
         >
           <Row style={{ display: "flex", alignItems: "flex-end" }}>
-            <Col style={{ display: "flex" }}>
+            <Col style={{ display: "flex" }} className="team-column">
               <div className="team-zara">
                 <Typography.Title
                   level={2}
@@ -229,7 +229,7 @@ export default function TheTeam() {
           className="team-container"
         >
           <Row style={{ display: "flex", alignItems: "flex-end" }}>
-            <Col style={{ display: "flex" }}>
+            <Col style={{ display: "flex" }} className="team-column">
               <div className="team-james">
                 <Typography.Title
                   level={2}

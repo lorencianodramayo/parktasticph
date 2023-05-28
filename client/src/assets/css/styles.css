@@ -395,4 +395,8 @@
     bottom: 30px;
     right: 20px;
   }
+
+  .team-column > img {
+    height: 427px !important;
+  }
 }
