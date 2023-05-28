@@ -1,0 +1,260 @@
+/* Hedaer */
+.header {
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 80px 0 104px;
+}
+
+.menu-container {
+  font-weight: 700;
+  color: #1f2937;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.navigation-mobile {
+  display: none;
+}
+
+.navigation-footer,
+.navigation-default {
+  width: 175px;
+}
+
+/* The consumer */
+.consumer-title1 {
+  margin: 0 !important;
+  z-index: 1;
+  color: #fff !important;
+  font-weight: 800 !important;
+  font-size: 50px !important;
+}
+
+.consumer-title2 {
+  margin: 0 !important;
+  z-index: 1;
+  color: #f6c64d !important;
+  font-weight: 800 !important;
+  font-size: 50px !important;
+}
+
+.consumer-subtitle-container {
+  z-index: 1;
+  width: 753px;
+  margin-bottom: 3em;
+  margin-top: 2em;
+}
+
+.consumer-subtitle1 {
+  margin: 0 !important;
+  color: #fff !important;
+  font-size: 26px !important;
+  font-weight: 500 !important;
+}
+
+.car-green-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 113px 75px 0;
+}
+
+.car-green-wrapper {
+  position: absolute;
+  top: 40.5em;
+  left: 0;
+}
+
+.car-green {
+  width: 350px;
+  height: auto;
+}
+
+.car-green-header {
+  background-repeat: no-repeat;
+  background-position: left, right;
+  height: 184px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-style: italic;
+  font-weight: 800;
+  font-size: 50px;
+  text-align: center;
+  color: #6bb42f;
+}
+
+.consumer-body-row {
+  padding: 0px 10em;
+}
+
+/* Consumer Body 7 */
+
+.consumer-button-link {
+  width: 550px;
+  z-index: 1;
+}
+
+.consumer-body7-container {
+  min-height: calc(100vh - 64px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.consumer-body7-wrapper {
+  position: absolute;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  width: -webkit-fill-available;
+  height: -webkit-fill-available;
+  filter: brightness(0.5);
+  min-height: calc(100vh - 64px);
+}
+.consumer-body7-title-wrapper {
+  z-index: 1;
+  width: 840px;
+}
+.consumer-body7-title {
+  margin: 0 !important;
+  color: #fff !important;
+  font-weight: 900 !important;
+  font-size: 50px !important;
+  letter-spacing: 0.01em !important;
+}
+.consumer-body7-subtitle-wrapper {
+  z-index: 1;
+  width: 1025px;
+  margin-bottom: 3em;
+  margin-top: 2em;
+}
+
+.consumer-body7-subtitle {
+  margin: 0 !important;
+  color: #fff !important;
+  font-size: 26px !important;
+  font-weight: 600 !important;
+}
+
+.consumer-body-col-subtitle {
+  color: #777777 !important;
+  font-weight: 500 !important;
+  font-size: 21px !important;
+  width: 530px;
+  float: left;
+  margin: 0 !important;
+}
+
+@media only screen and (max-width: 600px) {
+  /* Mobile Header */
+  .header {
+    padding: 0 20px;
+  }
+
+  .menu-container {
+    display: none;
+  }
+
+  .navigation-mobile {
+    display: block;
+  }
+
+  /* Mobile footer */
+  .navigation-footer {
+    width: 233px;
+  }
+
+  /* Mobile The Consumer */
+
+  .consumer-button-link {
+    width: auto;
+  }
+
+  .consumer-title1 {
+    width: 340px;
+    font-size: 38px !important;
+  }
+
+  .consumer-title2 {
+    font-size: 38px !important;
+  }
+
+  .consumer-subtitle-container {
+    width: 433px;
+  }
+
+  .consumer-subtitle1 {
+    font-size: 20px !important;
+  }
+
+  .car-green-container {
+    padding: 68px 36px 0px;
+  }
+
+  .car-green-wrapper {
+    top: 42.5em;
+  }
+
+  .car-green {
+    width: 185px;
+  }
+
+  .car-green-header {
+    background-size: 171px;
+    font-size: 36px;
+    height: auto;
+  }
+
+  .car-green-header > .border-span {
+    width: auto;
+  }
+
+  .consumer-body-row {
+    padding: 0 2em;
+  }
+
+  .consumer-body-row > h1 {
+    text-align: center;
+    font-size: 28px;
+  }
+
+  .consumer-body-row > div {
+    text-align: center !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+
+  .consumer-body-col-subtitle {
+    width: auto;
+    font-size: 16px !important;
+    margin-bottom: 20px !important;
+    float: left;
+  }
+
+  /* Mobile Consumer Body 7 */
+  .consumer-body7-title-wrapper {
+    width: 400px;
+  }
+
+  .consumer-body7-title {
+    font-size: 30px !important;
+  }
+
+  .consumer-body7-subtitle-wrapper {
+    width: 400px;
+  }
+
+  .consumer-body7-subtitle {
+    font-size: 18px !important;
+  }
+}

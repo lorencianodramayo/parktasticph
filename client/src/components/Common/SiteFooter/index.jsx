@@ -34,12 +34,16 @@ export default function SiteFooter({ footerNavigation }) {
           <div
             key={index}
             style={{
-              width: 175,
               borderRight:
                 footerNavigation?.length == index + 1
                   ? "none"
                   : "1px solid #6b728054",
             }}
+            className={
+              data.slug === "terms-and-conditions"
+                ? "navigation-footer"
+                : "navigation-default"
+            }
           >
             <Typography
               style={{

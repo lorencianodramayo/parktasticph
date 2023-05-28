@@ -44,56 +44,24 @@ export default function TheConsumers() {
             filter: "brightness(0.5)",
           }}
         />
-        <Typography.Title
-          style={{
-            margin: 0,
-            zIndex: 1,
-            color: "#fff",
-            fontWeight: 800,
-            fontSize: "50px",
-          }}
-        >
+        <Typography.Title className="consumer-title1">
           Say goodbye to parking hassles in
         </Typography.Title>
-        <Typography.Title
-          style={{
-            margin: 0,
-            zIndex: 1,
-            color: "#f6c64d",
-            fontWeight: 800,
-            fontSize: "50px",
-          }}
-        >
+        <Typography.Title className="consumer-title2">
           Metro manila
         </Typography.Title>
 
-        <div
-          style={{
-            zIndex: 1,
-            width: "753px",
-            marginBottom: "3em",
-            marginTop: "2em",
-          }}
-        >
-          <Typography.Title
-            level={4}
-            style={{
-              margin: 0,
-              color: "#fff",
-              fontSize: "26px",
-              fontWeight: 500,
-            }}
-          >
+        <div className="consumer-subtitle-container">
+          <Typography.Title level={4} className="consumer-subtitle1">
             PARKTASTIC PH gives you the power to create your own fantastic
             parking experience.
           </Typography.Title>
         </div>
         <div
           style={{
-            width: "550px",
-            zIndex: 1,
             fontWeight: 600,
           }}
+          className="consumer-button-link"
         >
           <Link
             to="https://55qvxzcjpn2.typeform.com/to/mFn3BFdY"
@@ -116,36 +84,15 @@ export default function TheConsumers() {
         </div>
       </div>
 
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-          padding: "113px 75px 0",
-        }}
-      >
-        <div style={{ position: "absolute", top: "40.5em", left: 0 }}>
-          <img
-            src={car}
-            alt="car-model"
-            style={{ width: "350px", height: "auto" }}
-          />
+      <div className="car-green-container">
+        <div className="car-green-wrapper">
+          <img src={car} alt="car-model" className="car-green" />
         </div>
         <div
           style={{
             backgroundImage: `url(${patern1}), url(${patern2}) `,
-            backgroundRepeat: "no-repeat",
-            backgroundPosition: "left, right",
-            height: "184px",
-            width: "100%",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            fontStyle: "italic",
-            fontWeight: 800,
-            fontSize: "50px",
-            textAlign: "center",
-            color: "#6BB42F",
           }}
+          className="car-green-header"
         >
           <div
             style={{ width: "686px", lineHeight: "56.65px" }}
@@ -164,9 +111,10 @@ export default function TheConsumers() {
           flexDirection: "column",
         }}
       >
-        <Row style={{ padding: "0px 10em" }}>
+        <Row className="consumer-body-row">
           <Col
-            span={12}
+            md={12}
+            xs={24}
             style={{
               display: "flex",
               flexDirection: "column",
@@ -178,24 +126,15 @@ export default function TheConsumers() {
             >
               Real Time Parking Availability
             </Typography.Title>
-            <Typography.Title
-              level={4}
-              style={{
-                color: "#777777",
-                fontWeight: 500,
-                fontSize: "21px",
-                width: "530px",
-                float: "left",
-                margin: 0,
-              }}
-            >
+            <Typography.Title level={4} className="consumer-body-col-subtitle">
               You can focus on enjoying the city without the stress of finding
               parking. We keep you informed about open parking spaces saving you
               valuable time!
             </Typography.Title>
           </Col>
           <Col
-            span={12}
+            md={12}
+            xs={24}
             style={{
               display: "flex",
               alignItems: "center",
@@ -224,9 +163,10 @@ export default function TheConsumers() {
           background: "#fff",
         }}
       >
-        <Row style={{ padding: "0px 10em" }}>
+        <Row className="consumer-body-row">
           <Col
-            span={12}
+            md={12}
+            xs={24}
             style={{
               display: "flex",
               alignItems: "center",
@@ -244,7 +184,8 @@ export default function TheConsumers() {
             />
           </Col>
           <Col
-            span={12}
+            md={12}
+            xs={24}
             style={{
               textAlign: "right",
               display: "flex",
@@ -258,17 +199,7 @@ export default function TheConsumers() {
             >
               Plan, Book, Pay, Repeat
             </Typography.Title>
-            <Typography.Title
-              level={4}
-              style={{
-                color: "#777777",
-                fontWeight: 500,
-                fontSize: "21px",
-                width: "530px",
-                float: "right",
-                margin: 0,
-              }}
-            >
+            <Typography.Title level={4} className="consumer-body-col-subtitle">
               Experience a hassle-free parking in Metro Manila with PARKTASTIC
               PH&apos;s user-friendly platform. Effortlessly plan your journey,
               reserve a parking slot in advance, and enjoy secure payment
@@ -286,9 +217,10 @@ export default function TheConsumers() {
           flexDirection: "column",
         }}
       >
-        <Row style={{ padding: "0px 10em" }}>
+        <Row className="consumer-body-row">
           <Col
-            span={12}
+            md={12}
+            xs={24}
             style={{
               display: "flex",
               flexDirection: "column",
@@ -300,23 +232,14 @@ export default function TheConsumers() {
             >
               Secure and Safe Parking
             </Typography.Title>
-            <Typography.Title
-              level={4}
-              style={{
-                color: "#777777",
-                fontWeight: 500,
-                fontSize: "21px",
-                width: "530px",
-                float: "left",
-                margin: 0,
-              }}
-            >
+            <Typography.Title level={4} className="consumer-body-col-subtitle">
               We provide enhanced measures, including 24/7 surveillance and
               well-lit environments.
             </Typography.Title>
           </Col>
           <Col
-            span={12}
+            md={12}
+            xs={24}
             style={{
               display: "flex",
               alignItems: "center",
@@ -345,9 +268,10 @@ export default function TheConsumers() {
           background: "#fff",
         }}
       >
-        <Row style={{ padding: "0px 10em" }}>
+        <Row className="consumer-body-row">
           <Col
-            span={12}
+            md={12}
+            xs={24}
             style={{
               display: "flex",
               alignItems: "center",
@@ -365,7 +289,8 @@ export default function TheConsumers() {
             />
           </Col>
           <Col
-            span={12}
+            md={12}
+            xs={24}
             style={{
               textAlign: "right",
               display: "flex",
@@ -379,17 +304,7 @@ export default function TheConsumers() {
             >
               Parktastic Bayani
             </Typography.Title>
-            <Typography.Title
-              level={4}
-              style={{
-                color: "#777777",
-                fontWeight: 500,
-                fontSize: "21px",
-                width: "530px",
-                float: "right",
-                margin: 0,
-              }}
-            >
+            <Typography.Title level={4} className="consumer-body-col-subtitle">
               Our partners are ready to assist you in navigating your parking
               spot, ensuring a smooth and stress-free process. Additionally, we
               offer a range of valuable services tailored to your needs,
@@ -407,9 +322,10 @@ export default function TheConsumers() {
           flexDirection: "column",
         }}
       >
-        <Row style={{ padding: "0px 10em" }}>
+        <Row className="consumer-body-row">
           <Col
-            span={12}
+            md={12}
+            xs={24}
             style={{
               display: "flex",
               flexDirection: "column",
@@ -421,23 +337,14 @@ export default function TheConsumers() {
             >
               Unlocking Exclusive Perks
             </Typography.Title>
-            <Typography.Title
-              level={4}
-              style={{
-                color: "#777777",
-                fontWeight: 500,
-                fontSize: "21px",
-                width: "530px",
-                float: "left",
-                margin: 0,
-              }}
-            >
+            <Typography.Title level={4} className="consumer-body-col-subtitle">
               Access to special offers and promotions from malls, hotels,
               tourist attractions, and other business in Metro Manila.
             </Typography.Title>
           </Col>
           <Col
-            span={12}
+            md={12}
+            xs={24}
             style={{
               display: "flex",
               alignItems: "center",
@@ -457,80 +364,30 @@ export default function TheConsumers() {
         </Row>
       </div>
       {/* body 7 */}
-      <div
-        style={{
-          minHeight: "calc(100vh - 64px)",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          textAlign: "center",
-          flexDirection: "column",
-          textShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
-        }}
-      >
+      <div className="consumer-body7-container">
         <div
           style={{
-            position: "absolute",
-            background: `url(${footerBackground})`,
-            backgroundSize: "cover",
-            backgroundRepeat: "no-repeat",
-            backgroundPositionX: "center",
-            width: "-webkit-fill-available",
-            height: "-webkit-fill-available",
-            filter: "brightness(0.5)",
-            minHeight: "calc(100vh - 64px)",
+            backgroundImage: `url(${footerBackground})`,
           }}
+          className="consumer-body7-wrapper"
         />
 
-        <div
-          style={{
-            zIndex: 1,
-            width: "840px",
-          }}
-        >
-          <Typography.Title
-            style={{
-              margin: 0,
-              color: "#fff",
-              fontWeight: 900,
-              fontSize: "50px",
-              letterSpacing: "0.01em",
-            }}
-          >
+        <div className="consumer-body7-title-wrapper">
+          <Typography.Title className="consumer-body7-title">
             <span style={{ color: "#f6c64d" }}>PARKTASTIC PH</span>&nbsp;
             Collaborates with Local Government and Business for Liveable Cities.
           </Typography.Title>
         </div>
 
-        <div
-          style={{
-            zIndex: 1,
-            width: "1025px",
-            marginBottom: "3em",
-            marginTop: "2em",
-          }}
-        >
-          <Typography.Title
-            level={4}
-            style={{
-              margin: 0,
-              color: "#fff",
-              fontSize: "26px",
-              fontWeight: 600,
-            }}
-          >
+        <div className="consumer-body7-subtitle-wrapper">
+          <Typography.Title level={4} className="consumer-body7-subtitle">
             We actively partner with local government and businesses across the
             Philippines to foster liveable, sustainable cities. Our adaptive
             platform addresses the unique needs of each community while
             enhancing parking experience in urban areas.
           </Typography.Title>
         </div>
-        <div
-          style={{
-            width: "550px",
-            zIndex: 1,
-          }}
-        >
+        <div className="consumer-button-link">
           <Link to="/the-lgu">
             <Button
               type="primary"

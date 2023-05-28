@@ -2,6 +2,7 @@ import React, { Suspense } from "react";
 import { ConfigProvider } from "antd";
 import ReactDOM from "react-dom/client";
 import "./index.css";
+import "./assets/css/styles.css";
 
 import { RouterProvider } from "react-router-dom";
 import { router } from "./routes";

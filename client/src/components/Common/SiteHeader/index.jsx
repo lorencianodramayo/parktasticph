@@ -2,10 +2,14 @@ import React, { useEffect, useState } from "react";
 
 import PropTypes from "prop-types";
 
-import { Layout, Typography, Menu } from "antd";
+import { Layout, Typography, Menu, Button } from "antd";
+
+import { MenuOutlined } from "@ant-design/icons";
+
 import { Link, useLocation } from "react-router-dom";
 
 import logo from "../../../assets/images/logo.png";
+import GlobalDrawer from "../GlobalDrawer";
 
 const { Header } = Layout;
 
@@ -18,18 +22,7 @@ export default function SiteHeader({ headerNavigation }) {
   }, [location]);
 
   return (
-    <Header
-      style={{
-        position: "fixed",
-        zIndex: 99,
-        width: "100%",
-        backgroundColor: "#fff",
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "space-between",
-        padding: "0 80px 0 104px",
-      }}
-    >
+    <Header className="header">
       <Link to="/">
         <div
           style={{
@@ -61,14 +54,9 @@ export default function SiteHeader({ headerNavigation }) {
         selectedKeys={path}
         items={headerNavigation}
         disabledOverflow={true}
-        style={{
-          fontWeight: 700,
-          color: "#1F2937",
-          textTransform: "uppercase",
-          fontSize: "12px",
-        }}
         className="menu-container"
       />
+      <GlobalDrawer selectedKeys={path} items={headerNavigation} />
     </Header>
   );
 }
