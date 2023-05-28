@@ -21,6 +21,7 @@ export default function SiteFooter({ footerNavigation }) {
     <Footer
       style={{
         textAlign: "center",
+        padding: "24px 0",
       }}
     >
       <div
@@ -39,11 +40,6 @@ export default function SiteFooter({ footerNavigation }) {
                   ? "none"
                   : "1px solid #6b728054",
             }}
-            className={
-              data.slug === "terms-and-conditions"
-                ? "navigation-footer"
-                : "navigation-default"
-            }
           >
             <Typography
               style={{
@@ -51,6 +47,7 @@ export default function SiteFooter({ footerNavigation }) {
                 textTransform: "uppercase",
                 textDecoration: data?.key === path ? "underline" : "none",
                 fontSize: 10,
+                padding: "0 1em",
               }}
               className="footer-links"
             >

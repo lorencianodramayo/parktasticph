@@ -188,7 +188,7 @@
   }
 
   .consumer-subtitle-container {
-    width: 433px;
+    width: 350px;
   }
 
   .consumer-subtitle1 {
@@ -201,6 +201,7 @@
 
   .car-green-wrapper {
     top: 42.5em;
+    display: none;
   }
 
   .car-green {
@@ -243,7 +244,7 @@
 
   /* Mobile Consumer Body 7 */
   .consumer-body7-title-wrapper {
-    width: 400px;
+    width: 350px;
   }
 
   .consumer-body7-title {
@@ -251,7 +252,7 @@
   }
 
   .consumer-body7-subtitle-wrapper {
-    width: 400px;
+    width: 350px;
   }
 
   .consumer-body7-subtitle {

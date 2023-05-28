@@ -39,8 +39,8 @@ export default function TheConsumers() {
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
             backgroundPositionX: "center",
-            width: "-webkit-fill-available",
-            height: "-webkit-fill-available",
+            width: "100%",
+            height: "100%",
             filter: "brightness(0.5)",
           }}
         />
@@ -145,7 +145,7 @@ export default function TheConsumers() {
               src={realTime}
               alt="real-time parking"
               style={{
-                width: "-webkit-fill-available",
+                width: "100%",
                 height: "auto",
                 borderRadius: "2em",
               }}
@@ -177,7 +177,7 @@ export default function TheConsumers() {
               src={payParking}
               alt="real-time parking"
               style={{
-                width: "-webkit-fill-available",
+                width: "100%",
                 height: "auto",
                 borderRadius: "2em",
               }}
@@ -250,7 +250,7 @@ export default function TheConsumers() {
               src={security}
               alt="real-time parking"
               style={{
-                width: "-webkit-fill-available",
+                width: "100%",
                 height: "auto",
                 borderRadius: "2em",
               }}
@@ -282,7 +282,7 @@ export default function TheConsumers() {
               src={bayanihan}
               alt="real-time parking"
               style={{
-                width: "-webkit-fill-available",
+                width: "100%",
                 height: "auto",
                 borderRadius: "2em",
               }}
@@ -355,7 +355,7 @@ export default function TheConsumers() {
               src={perks}
               alt="real-time parking"
               style={{
-                width: "-webkit-fill-available",
+                width: "100%",
                 height: "auto",
                 borderRadius: "2em",
               }}
