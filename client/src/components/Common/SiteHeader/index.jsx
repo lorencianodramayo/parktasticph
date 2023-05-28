@@ -2,9 +2,7 @@ import React, { useEffect, useState } from "react";
 
 import PropTypes from "prop-types";
 
-import { Layout, Typography, Menu, Button } from "antd";
-
-import { MenuOutlined } from "@ant-design/icons";
+import { Layout, Typography, Menu } from "antd";
 
 import { Link, useLocation } from "react-router-dom";
 

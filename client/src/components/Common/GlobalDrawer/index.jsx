@@ -15,9 +15,7 @@ const GlobalDrawer = ({ selectedKeys, items }) => {
   };
   return (
     <>
-      <Button className="navigation-mobile" size="large" onClick={showDrawer}>
-        <MenuOutlined />
-      </Button>
+      <Button className="navigation-mobile" size="large" onClick={showDrawer} icon={<MenuOutlined />} />
       <Drawer
         placement="right"
         closable={false}

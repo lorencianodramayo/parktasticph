@@ -153,6 +153,93 @@
   margin: 0 !important;
 }
 
+/* The Team */
+
+.team-header-title {
+  margin: 0px !important;
+  z-index: 1;
+  color: rgb(255, 255, 255) !important;
+  font-weight: 800 !important;
+  font-size: 44px !important;
+  width: 1081px;
+  text-shadow: rgba(0, 0, 0, 0.25) 0px 4px 4px;
+  text-transform: none;
+}
+
+.team-header-subtitle-wrapper {
+  z-index: 1;
+  width: 753px;
+  margin-bottom: 3em;
+  margin-top: 2em;
+}
+
+.team-header-subtitle {
+  margin: 0px !important;
+  font-size: 26px !important;
+  font-weight: 500 !important;
+  text-shadow: rgba(0, 0, 0, 0.25) 0px 4px 4px;
+  color: rgb(245, 198, 78) !important;
+  text-transform: none;
+}
+
+.team-content-header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 75px 75px 0px;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+}
+
+.team-content-header {
+  background-repeat: no-repeat;
+  background-position: left center, right center;
+  height: 184px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-style: italic;
+  font-weight: 800;
+  font-size: 50px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+.team-container,
+.team-container-first {
+  padding-top: 30em;
+  display: flex;
+}
+
+.team-member-margin-left {
+  margin-left: 2em;
+}
+
+.team-james {
+  position: absolute;
+  bottom: 57px;
+  right: 60px;
+  text-align: right;
+  z-index: 1;
+}
+
+.team-zara {
+  position: absolute;
+  bottom: 40px;
+  right: 60px;
+  text-align: right;
+  z-index: 1;
+}
+
+.team-jomar {
+  position: absolute;
+  bottom: 40px;
+  right: 70px;
+  text-align: right;
+  z-index: 1;
+}
+
 @media only screen and (max-width: 600px) {
   /* Mobile Header */
   .header {
@@ -164,7 +251,9 @@
   }
 
   .navigation-mobile {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   /* Mobile footer */
@@ -257,5 +346,53 @@
 
   .consumer-body7-subtitle {
     font-size: 18px !important;
+  }
+
+  /* Mobile Team */
+
+  .team-header-title {
+    font-size: 28px !important;
+    width: 360px;
+  }
+
+  .team-header-subtitle-wrapper {
+    width: 340px;
+  }
+
+  .team-header-subtitle {
+    font-size: 18px !important;
+  }
+
+  .team-content-header-wrapper {
+    padding: 68px 36px 0px;
+  }
+
+  .team-content-header {
+    background-size: 171px;
+    font-size: 36px;
+  }
+
+  .team-container-first {
+    padding-top: 22em;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .team-container {
+    padding-top: 7em;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .team-member-margin-left {
+    margin-left: 0;
+  }
+
+  .team-jomar,
+  .team-zara,
+  .team-james {
+    bottom: 30px;
+    right: 20px;
   }
 }

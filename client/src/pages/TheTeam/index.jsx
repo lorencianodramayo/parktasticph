@@ -34,53 +34,24 @@ export default function TheTeam() {
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
             backgroundPositionX: "center",
-            width: "-webkit-fill-available",
+            width: "100%",
             filter: "brightness(0.5)",
             height: "479px",
           }}
         />
-        <Typography.Title
-          style={{
-            margin: 0,
-            zIndex: 1,
-            color: "#fff",
-            fontWeight: 800,
-            fontSize: "44px",
-            width: "1081px",
-            textShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
-            textTransform: "none",
-          }}
-        >
+        <Typography.Title className="team-header-title">
           We&apos;re on the lookout for{" "}
           <span style={{ color: "#F5C64E" }}>talented individuals</span> with a
           passion for urban mobility and a drive to reshape the way cities move.
         </Typography.Title>
 
-        <div
-          style={{
-            zIndex: 1,
-            width: "753px",
-            marginBottom: "3em",
-            marginTop: "2em",
-          }}
-        >
-          <Typography.Title
-            level={4}
-            style={{
-              margin: 0,
-              fontSize: "26px",
-              fontWeight: 500,
-              textShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
-              color: "#F5C64E",
-              textTransform: "none",
-            }}
-          >
+        <div className="team-header-subtitle-wrapper">
+          <Typography.Title level={4} className="team-header-subtitle">
             Join our growing team and contribute to a brighter urban future!
           </Typography.Title>
         </div>
         <div
           style={{
-            width: "550px",
             zIndex: 1,
             fontWeight: 600,
           }}
@@ -107,32 +78,12 @@ export default function TheTeam() {
         </div>
       </div>
 
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-          padding: "75px 75px 0",
-          position: "absolute",
-          zIndex: 1,
-          width: "100%",
-        }}
-      >
+      <div className="team-content-header-wrapper">
         <div
           style={{
             backgroundImage: `url(${pattern1}), url(${pattern2}) `,
-            backgroundRepeat: "no-repeat",
-            backgroundPosition: "left, right",
-            height: "184px",
-            width: "100%",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            fontStyle: "italic",
-            fontWeight: 800,
-            fontSize: "50px",
-            textAlign: "center",
-            color: "#FFFFFF",
           }}
+          className="team-content-header"
         >
           <div
             style={{
@@ -149,24 +100,16 @@ export default function TheTeam() {
       <Row>
         {/* Jomar */}
         <Col
-          span={8}
+          md={8}
+          sx={24}
           style={{
             backgroundColor: "#eace6a",
-            paddingTop: "30em",
-            display: "flex",
           }}
+          className="team-container-first"
         >
           <Row style={{ display: "flex", alignItems: "flex-end" }}>
             <Col style={{ display: "flex" }}>
-              <div
-                style={{
-                  position: "absolute",
-                  bottom: 40,
-                  right: 70,
-                  textAlign: "right",
-                  zIndex: 1,
-                }}
-              >
+              <div className="team-jomar">
                 <Typography.Title
                   level={2}
                   style={{
@@ -217,24 +160,16 @@ export default function TheTeam() {
         </Col>
         {/* Zara */}
         <Col
-          span={8}
+          md={8}
+          sx={24}
           style={{
             backgroundColor: "#75d0d7",
-            paddingTop: "30em",
-            display: "flex",
           }}
+          className="team-container"
         >
           <Row style={{ display: "flex", alignItems: "flex-end" }}>
             <Col style={{ display: "flex" }}>
-              <div
-                style={{
-                  position: "absolute",
-                  bottom: 40,
-                  right: 60,
-                  textAlign: "right",
-                  zIndex: 1,
-                }}
-              >
+              <div className="team-zara">
                 <Typography.Title
                   level={2}
                   style={{
@@ -278,32 +213,24 @@ export default function TheTeam() {
                   height: 490,
                   width: "auto",
                   mixBlendMode: "luminosity",
-                  marginLeft: "2em",
                 }}
+                className="team-member-margin-left"
               />
             </Col>
           </Row>
         </Col>
         {/* James */}
         <Col
-          span={8}
+          md={8}
+          sx={24}
           style={{
             backgroundColor: "#DE8B95",
-            display: "flex",
-            justifyContent: "flex-end",
           }}
+          className="team-container"
         >
           <Row style={{ display: "flex", alignItems: "flex-end" }}>
             <Col style={{ display: "flex" }}>
-              <div
-                style={{
-                  position: "absolute",
-                  bottom: 57,
-                  right: 60,
-                  textAlign: "right",
-                  zIndex: 1,
-                }}
-              >
+              <div className="team-james">
                 <Typography.Title
                   level={2}
                   style={{
