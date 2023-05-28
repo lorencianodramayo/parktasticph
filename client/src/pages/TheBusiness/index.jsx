@@ -12,41 +12,19 @@ import scalable from "../../assets/images/business/scalable.png";
 
 export default function TheBusiness() {
   return (
-    <div>
-      <div
-        style={{
-          background: "linear-gradient(90deg, #8FBE61 0%, #F5C64E 90.81%)",
-          height: "367px",
-          display: "flex",
-          justifyContent: "space-between",
-        }}
-      >
+    <div style={{ overflow: "hidden" }}>
+      <div className="business-header-wrapper">
         <div
           style={{
-            display: "flex",
-            justifyContent: "center",
-            flexDirection: "column",
-            paddingLeft: "70px",
-            width: "1950px",
-            background: `url(${pattern1}), url(${pattern2})`,
-            backgroundRepeat: "no-repeat",
-            backgroundPositionX: "left, right",
-            backgroundPositionY: "center",
+            backgroundImage: `url(${pattern1}), url(${pattern2})`,
           }}
+          className="business-header-content-left"
         >
-          <Typography className="lgu-header">
+          <Typography className="business-header-title">
             Are you struggling to sell your idle land and tired of seeing it
             lose value?
           </Typography>
-          <Typography
-            style={{
-              fontSize: "21px",
-              fontWeight: 600,
-              color: "#fff",
-              width: "650px",
-              marginTop: "20px",
-            }}
-          >
+          <Typography className="business-header-subtitle">
             What if you could earn revenue and increase the value of your land
             while searching for the perfect buyer?
           </Typography>
@@ -76,35 +54,25 @@ export default function TheBusiness() {
         </div>
         <div
           style={{
-            background: `url(${car})`,
-            height: "367px",
-            backgroundPosition: "right",
-            backgroundSize: "contain",
-            backgroundRepeat: "no-repeat",
-            width: "-webkit-fill-available",
+            backgroundImage: `url(${car})`,
           }}
+          className="business-header-content-right"
         ></div>
       </div>
       {/* body 2 */}
-      <div
-        style={{
-          minHeight: "calc(100vh - 64px)",
-          display: "flex",
-          justifyContent: "center",
-          flexDirection: "column",
-        }}
-      >
+      <div className="business-body2">
         <Row
           style={{
-            padding: "0px 10em",
             background: `url(${pattern1}), url(${pattern2})`,
             backgroundRepeat: "no-repeat",
             backgroundPositionX: "50px, 95%",
             backgroundPositionY: "10px, 280px",
           }}
+          className="business-content-row"
         >
           <Col
-            span={12}
+            sx={24}
+            md={12}
             style={{
               display: "flex",
               alignItems: "center",
@@ -121,30 +89,12 @@ export default function TheBusiness() {
               }}
             />
           </Col>
-          <Col span={12} style={{ textAlign: "right" }}>
-            <Typography.Title
-              style={{
-                color: "rgba(31, 41, 55, 0.85)",
-                fontWeight: 700,
-                fontSize: "36px",
-                width: "596px",
-                float: "right",
-              }}
-            >
+          <Col sx={24} md={12} className="business-col-body2">
+            <Typography.Title className="business-body2-title">
               <span style={{ color: "#6BB42F" }}>PARKTASTIC PH</span> helps you
               with your short-term challenge.
             </Typography.Title>
-            <Typography.Title
-              level={4}
-              style={{
-                color: "#777777",
-                fontWeight: 500,
-                fontSize: "21px",
-                width: "530px",
-                float: "right",
-                margin: 0,
-              }}
-            >
+            <Typography.Title level={4} className="business-body2-subtitle">
               Sign up your idle land with us and we&apos;ll equip it with
               cutting-edge tech! From transforming your land into a temporary
               parking area to managing operations, Parktastic PH has you
@@ -155,39 +105,13 @@ export default function TheBusiness() {
         </Row>
       </div>
       {/* body 3 */}
-      <div
-        style={{
-          minHeight: "calc(100vh - 150px)",
-          display: "flex",
-          justifyContent: "center",
-          flexDirection: "column",
-          backgroundColor: "#fff",
-        }}
-      >
-        <Row style={{ padding: "0px 10em" }}>
-          <Col span={12}>
-            <Typography.Title
-              style={{
-                color: "#6BB42F",
-                fontWeight: 700,
-                fontSize: "36px",
-                width: "514px",
-              }}
-              className="border-span"
-            >
+      <div className="business-body3">
+        <Row className="business-content-row">
+          <Col sx={24} md={12} className="business-col-body3">
+            <Typography.Title className="border-span business-body3-title">
               <span>Earn More!</span>
             </Typography.Title>
-            <Typography.Title
-              level={4}
-              style={{
-                color: "#777777",
-                fontWeight: 500,
-                fontSize: "21px",
-                width: "571px",
-                float: "left",
-                margin: 0,
-              }}
-            >
+            <Typography.Title level={4} className="business-body3-subtitle">
               Not only does it boost your earnings, but it also enhances land
               value through increased foot traffic.
               <br />
@@ -198,7 +122,8 @@ export default function TheBusiness() {
             </Typography.Title>
           </Col>
           <Col
-            span={12}
+            sx={24}
+            md={12}
             style={{
               display: "flex",
               alignItems: "center",
@@ -221,16 +146,9 @@ export default function TheBusiness() {
       {/* body 4 */}
       <div
         style={{
-          minHeight: "calc(100vh - 168px)",
-          display: "flex",
-          justifyContent: "center",
-          flexDirection: "column",
-          padding: "0px 10em",
           backgroundImage: `url(${pattern1}), url(${pattern2})`,
-          backgroundRepeat: "no-repeat",
-          backgroundPositionX: "40px, 97%",
-          backgroundPositionY: "440px, 50px",
         }}
+        className="business-body4 business-content-row"
       >
         <Row
           style={{
@@ -239,13 +157,9 @@ export default function TheBusiness() {
           }}
         >
           <Col
-            span={12}
-            style={{
-              padding: "0 69px",
-              display: "flex",
-              justifyContent: "center",
-              flexDirection: "column",
-            }}
+            sx={24}
+            md={12}
+            className="business-col-body4"
           >
             <Typography.Title
               style={{
@@ -301,7 +215,8 @@ export default function TheBusiness() {
             </div>
           </Col>
           <Col
-            span={12}
+            sx={24}
+            md={12}
             style={{
               display: "flex",
               alignItems: "center",
