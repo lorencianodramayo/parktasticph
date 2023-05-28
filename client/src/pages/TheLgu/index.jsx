@@ -15,35 +15,19 @@ import park from "../../assets/images/lgu/park.png";
 export default function TheLgu() {
   return (
     <div>
-      <div
-        style={{
-          background: "linear-gradient(90deg, #8FBE61 0%, #F5C64E 90.81%)",
-          height: "367px",
-          display: "flex",
-          justifyContent: "space-between",
-        }}
-      >
+      <div className="lgu-header-wrapper">
         <div
           style={{
-            display: "flex",
-            justifyContent: "center",
-            flexDirection: "column",
-            paddingLeft: "70px",
-            width: "1900px",
-            background: `url(${pattern1}), url(${pattern2})`,
-            backgroundRepeat: "no-repeat",
-            backgroundPositionX: "left, right",
-            backgroundPositionY: "center",
+            backgroundImage: `url(${pattern1}), url(${pattern2})`,
           }}
+          className="lgu-header-content-left"
         >
-          <Typography className="lgu-header">
+          <Typography className="lgu-header-title">
             Transform urban mobility in Metro Manila through innovative parking
             solutions and collaborative partnerships with local government
             units.
           </Typography>
-          <Typography
-            style={{ fontSize: "16px", fontWeight: 600, color: "#fff" }}
-          >
+          <Typography className="lgu-header-subtitle">
             *Suggest your neighborhood!
           </Typography>
           <div style={{ display: "flex", marginTop: "20px" }}>
@@ -72,36 +56,25 @@ export default function TheLgu() {
         </div>
         <div
           style={{
-            background: `url(${car})`,
-            height: "367px",
-            backgroundPosition: "right",
-            backgroundSize: "contain",
-            backgroundRepeat: "no-repeat",
-            width: "-webkit-fill-available",
+            backgroundImage: `url(${car})`,
           }}
+          className="lgu-header-content-right"
         ></div>
       </div>
       {/* body 2 */}
-      <div
-        style={{
-          minHeight: "calc(100vh - 64px)",
-          display: "flex",
-          justifyContent: "center",
-          flexDirection: "column",
-          backgroundColor: "#fff",
-        }}
-      >
+      <div className="lgu-body2">
         <Row
           style={{
-            padding: "0px 10em",
             background: `url(${pattern1}), url(${pattern3})`,
             backgroundRepeat: "no-repeat",
             backgroundPositionX: "50px, 95%",
             backgroundPositionY: "10px, 300px",
           }}
+          className="lgu-content-row"
         >
           <Col
-            span={12}
+            md={12}
+            sx={24}
             style={{
               display: "flex",
               alignItems: "center",
@@ -112,36 +85,18 @@ export default function TheLgu() {
               src={benefit}
               alt="benefit parking"
               style={{
-                width: "-webkit-fill-available",
+                width: "100%",
                 height: "auto",
                 borderRadius: "2em",
               }}
             />
           </Col>
-          <Col span={12} style={{ textAlign: "right" }}>
-            <Typography.Title
-              style={{
-                color: "rgba(31, 41, 55, 0.85)",
-                fontWeight: 700,
-                fontSize: "36px",
-                width: "522px",
-                float: "right",
-              }}
-            >
+          <Col md={12} sx={24} className="lgu-col-body2">
+            <Typography.Title className="lgu-body2-title">
               Cruise into the benefits of joining forces with{" "}
               <span style={{ color: "#6BB42F" }}>PARKTASTIC PH.</span>
             </Typography.Title>
-            <Typography.Title
-              level={4}
-              style={{
-                color: "#777777",
-                fontWeight: 500,
-                fontSize: "21px",
-                width: "530px",
-                float: "right",
-                margin: 0,
-              }}
-            >
+            <Typography.Title level={4} className="lgu-body2-subtitle">
               From Streamlined parking management to happier communities and
               satisfied residents.
             </Typography.Title>
@@ -149,46 +104,23 @@ export default function TheLgu() {
         </Row>
       </div>
       {/* body 3 */}
-      <div
-        style={{
-          minHeight: "calc(100vh - 150px)",
-          display: "flex",
-          justifyContent: "center",
-          flexDirection: "column",
-        }}
-      >
-        <Row style={{ padding: "0px 10em" }}>
-          <Col span={12}>
-            <Typography.Title
-              style={{
-                color: "rgba(31, 41, 55, 0.85)",
-                fontWeight: 700,
-                fontSize: "36px",
-                width: "514px",
-              }}
-            >
+      <div className="lgu-body3">
+        <Row className="lgu-content-row">
+          <Col md={12} sx={24} className="lgu-col-body3">
+            <Typography.Title className="lgu-body3-title">
               Tackle{" "}
               <span style={{ color: "#6BB42F" }}>Metro Manila&apos;s</span>{" "}
               parking challenges today to pave the way for a sustainable and
               accessible urban future.
             </Typography.Title>
-            <Typography.Title
-              level={4}
-              style={{
-                color: "#777777",
-                fontWeight: 500,
-                fontSize: "21px",
-                width: "530px",
-                float: "left",
-                margin: 0,
-              }}
-            >
+            <Typography.Title level={4} className="lgu-body3-subtitle">
               Efficient parking management brings immediate benefits while
               complementing long-term infrastructure plans.
             </Typography.Title>
           </Col>
           <Col
-            span={12}
+            md={12}
+            sx={24}
             style={{
               display: "flex",
               alignItems: "center",
@@ -199,7 +131,7 @@ export default function TheLgu() {
               src={metro}
               alt="real-time parking"
               style={{
-                width: "-webkit-fill-available",
+                width: "100%",
                 height: "auto",
                 borderRadius: "2em",
               }}
@@ -208,37 +140,15 @@ export default function TheLgu() {
         </Row>
       </div>
       {/* body 4 */}
-      <div
-        style={{
-          minHeight: "calc(100vh - 150px)",
-          display: "flex",
-          justifyContent: "center",
-          flexDirection: "column",
-          background: "#fff",
-        }}
-      >
-        <Row style={{ padding: "5em 10em" }}>
+      <div className="lgu-body4">
+        <Row className="lgu-content-row">
           <Col
             span={24}
-            style={{
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              flexDirection: "column",
-            }}
+            className="lgu-col-body4"
           >
             <MinimalCarousel />
             <div>
-              <Typography.Title
-                level={4}
-                style={{
-                  color: "#777777",
-                  fontWeight: 500,
-                  fontSize: "21px",
-                  margin: 0,
-                  width: "1034px",
-                }}
-              >
+              <Typography.Title level={4} className="lgu-body4-subtitle">
                 With PARKTASTIC PH, not only do LGUs gain access to our
                 innovative parking platform, but we also{" "}
                 <span style={{ color: "#6BB42F" }}>
@@ -252,45 +162,15 @@ export default function TheLgu() {
         </Row>
       </div>
       {/* body 5 */}
-      <div
-        style={{
-          minHeight: "calc(100vh - 150px)",
-          display: "flex",
-          justifyContent: "center",
-          flexDirection: "column",
-        }}
-      >
-        <Row style={{ padding: "5em 15em" }}>
-          <Col
-            span={24}
-            style={{
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              flexDirection: "column",
-            }}
-          >
-            <Typography.Title
-              style={{
-                color: "rgba(31, 41, 55, 0.85)",
-                fontWeight: 700,
-                fontSize: "36px",
-              }}
-            >
+      <div className="lgu-body5">
+        <Row className="lgu-content-row">
+          <Col span={24} className="lgu-col-body5">
+            <Typography.Title className="lgu-body5-title">
               Steer towards the full potential of street spaces with{" "}
               <span style={{ color: "#6BB42F" }}>PARKTASTIC PH&apos;s</span>{" "}
               adaptive platform!
             </Typography.Title>
-            <Typography.Title
-              level={4}
-              style={{
-                color: "#777777",
-                fontWeight: 500,
-                fontSize: "21px",
-                margin: 0,
-                marginBottom: "2em",
-              }}
-            >
+            <Typography.Title level={4} className="lgu-body5-subtitle">
               Our platform integrates with evolving mobility trends such as
               micromobility and shared mobility networks
             </Typography.Title>
@@ -298,7 +178,7 @@ export default function TheLgu() {
               src={park}
               alt="real-time parking"
               style={{
-                width: "-webkit-fill-available",
+                width: "100%",
                 height: "auto",
                 borderRadius: "2em",
               }}

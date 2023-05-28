@@ -240,6 +240,162 @@
   z-index: 1;
 }
 
+/* THE LGU */
+
+.lgu-header-wrapper {
+  background: linear-gradient(
+    90deg,
+    rgb(143, 190, 97) 0%,
+    rgb(245, 198, 78) 90.81%
+  );
+  height: 367px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.lgu-header-content-left {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 70px;
+  width: 1900px;
+  background-repeat: no-repeat;
+  background-position-x: 0%, 100%;
+  background-position-y: 50%, center;
+}
+
+.lgu-header-content-right {
+  height: 367px;
+  width: -webkit-fill-available;
+  background-position-x: right;
+  background-position-y: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.lgu-header-title {
+  text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+  font-style: normal;
+  font-weight: 900;
+  font-size: 31px;
+  letter-spacing: 0.01em;
+  color: #ffffff;
+  line-height: 60px;
+  align-items: center;
+  display: flex;
+}
+
+.lgu-header-subtitle {
+  font-size: 16px;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+}
+
+.lgu-content-row {
+  padding: 0px 10em;
+}
+
+.lgu-body2 {
+  min-height: calc(100vh - 64px);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgb(255, 255, 255);
+}
+
+.lgu-col-body2 {
+  text-align: right;
+}
+
+.lgu-body2-title {
+  color: rgba(31, 41, 55, 0.85) !important;
+  font-weight: 700 !important;
+  font-size: 36px !important;
+  width: 522px;
+  float: right;
+}
+.lgu-body2-subtitle {
+  color: rgb(119, 119, 119) !important;
+  font-weight: 500 !important;
+  font-size: 21px !important;
+  width: 530px;
+  float: right;
+  margin: 0px !important;
+}
+
+.lgu-body3 {
+  min-height: calc(100vh - 150px);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.lgu-body3-title {
+  color: rgba(31, 41, 55, 0.85) !important;
+  font-weight: 700 !important;
+  font-size: 36px !important;
+  width: 514px;
+}
+.lgu-body3-subtitle {
+  color: rgb(119, 119, 119) !important;
+  font-weight: 500 !important;
+  font-size: 21px !important;
+  width: 530px;
+  float: left;
+  margin: 0px;
+}
+
+.lgu-body4 {
+  min-height: calc(100vh - 150px);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background: rgb(255, 255, 255);
+}
+
+.lgu-col-body4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.lgu-body4-subtitle {
+  color: rgb(119, 119, 119) !important;
+  font-weight: 500 !important;
+  font-size: 21px !important;
+  margin: 0px !important;
+  width: 1034px;
+  padding-bottom: 4em;
+}
+
+.lgu-body5 {
+  min-height: calc(100vh - 150px);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.lgu-col-body5 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.lgu-body5-title {
+  color: rgba(31, 41, 55, 0.85) !important;
+  font-weight: 700 !important;
+  font-size: 36px !important;
+}
+
+.lgu-body5-subtitle {
+  color: rgb(119, 119, 119) !important;
+  font-weight: 500 !important;
+  font-size: 21px !important;
+  margin: 0px 0px 2em;
+}
+
 @media only screen and (max-width: 600px) {
   /* Mobile Header */
   .header {
@@ -398,5 +554,61 @@
 
   .team-column > img {
     height: 427px !important;
+  }
+
+  .lgu-header-content-left {
+    padding: 1em 2em;
+    width: 100%;
+    background-size: 99px;
+  }
+
+  .lgu-header-content-right {
+    display: none;
+  }
+
+  .lgu-header-title {
+    font-size: 22px;
+    line-height: 34px;
+  }
+
+  .lgu-header-subtitle {
+    font-size: 14px;
+    margin-top: 13px;
+  }
+
+  .lgu-content-row {
+    padding: 0px 2em;
+    background-image: none !important;
+  }
+
+  .lgu-col-body2,
+  .lgu-col-body3,
+  .lgu-col-body4,
+  .lgu-col-body5 {
+    text-align: center;
+  }
+
+  .lgu-body2-title,
+  .lgu-body3-title,
+  .lgu-body5-title {
+    width: auto;
+    font-size: 31px !important;
+  }
+
+  .lgu-body2-subtitle,
+  .lgu-body3-subtitle,
+  .lgu-body5-subtitle {
+    font-size: 16px !important;
+    width: auto;
+  }
+
+  .lgu-body4-subtitle {
+    font-size: 20px !important;
+    width: auto;
+  }
+
+  .lgu-body3-subtitle,
+  .lgu-body5-subtitle {
+    margin-bottom: 2em !important;
   }
 }
