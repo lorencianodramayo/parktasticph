@@ -34,7 +34,7 @@ const router = createBrowserRouter([
       },
       ,
       {
-        path: "/case-study",
+        path: "/manila-zoo",
         element: <Pager content={<CaseStudy />} title="Manila Zoo" />,
       },
     ],

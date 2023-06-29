@@ -37,9 +37,9 @@ export const headerNavigation = [
     key: "/the-business",
   },
   {
-    label: <Link to="/case-study">Case Study</Link>,
-    slug: "case-study",
-    key: "/case-study",
+    label: <Link to="/manila-zoo">Case Study</Link>,
+    slug: "manila-zoo",
+    key: "/manila-zoo",
   },
   {
     label: <Link to="/the-team">The Team</Link>,
