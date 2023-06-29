@@ -523,7 +523,19 @@
 .case-study-car-green-container {
   display: flex;
   justify-content: space-between;
-  padding: 70px 70px;
+  padding: 70px 70px 40px;
+  background-color: #fffdfd;
+}
+
+.case-study-pricing {
+  text-align: center;
+  font-size: 21px ;
+  font-weight: 800;
+  background-color: #fffdfd;
+}
+
+.case-study-pricing  > span{
+ font-style: italic;
 }
 
 .case-study-car-green-header {
@@ -545,6 +557,7 @@
   overflow: hidden;
   width: 100%;
   padding-top: 56.25%;
+  background-color: #fffdfd;
 }
 
 .responsive-iframe {
@@ -832,5 +845,11 @@
 
   #case-study-frame-container {
     min-height: 67em;
+  }
+
+  .case-study-pricing {
+    text-align: center;
+    font-size: 20px ;
+    padding: 0 2em;
   }
 }

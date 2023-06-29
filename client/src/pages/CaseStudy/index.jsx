@@ -18,12 +18,18 @@ export default function CaseStudy() {
             style={{ width: "970px", lineHeight: "56.65px" }}
             className="border-span"
           >
-            <div className="case-study-header">
-              PARKTASTIC PH X MANILA ZOO:
-            </div>
+            <div className="case-study-header">PARKTASTIC PH X MANILA ZOO:</div>
             <span>Taming the Parking Beast!</span>
           </div>
         </div>
+      </div>
+
+      <div className="case-study-pricing">
+        Reserve your parking slot for PhP 60* per vehicle and enjoy exclusive
+        discounts and promotions with our partners.
+        <br />
+        <br />
+        <span>*PhP 50 Regular Fee plus PhP 10 Convenience Fee.</span>
       </div>
       <div id="case-study-frame-container">
         <iframe
