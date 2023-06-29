@@ -518,6 +518,63 @@
   flex-direction: column;
 }
 
+/* Case Study */
+
+.case-study-car-green-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 70px 70px;
+}
+
+.case-study-car-green-header {
+  background-repeat: no-repeat;
+  background-position: left, right;
+  height: 184px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 50px;
+  text-align: center;
+  color: #6bb42f;
+}
+
+#case-study-frame-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%;
+}
+
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.case-study-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+}
+
+.case-study-header > img {
+  width: 569px;
+  background-color: #6bb42f;
+  margin-top: -9px;
+}
+
+.case-connector {
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
 @media only screen and (max-width: 600px) {
   /* Mobile Header */
   .header {
@@ -566,6 +623,10 @@
     padding: 68px 36px 0px;
   }
 
+  .case-study-car-green-container {
+    padding: 68px 36px;
+  }
+
   .car-green-wrapper {
     top: 42.5em;
     display: none;
@@ -578,6 +639,12 @@
   .car-green-header {
     background-size: 171px;
     font-size: 36px;
+    height: auto;
+  }
+
+  .case-study-car-green-header {
+    background-size: 171px;
+    font-size: 30px;
     height: auto;
   }
 
@@ -752,5 +819,19 @@
 
   .business-col-body4 {
     padding: 2em 3em;
+  }
+
+  /* Case Study */
+  .case-study-header > img {
+    width: 270px;
+  }
+
+  .case-study-header {
+    display: block;
+    line-height: 40px;
+  }
+
+  #case-study-frame-container {
+    min-height: 67em;
   }
 }

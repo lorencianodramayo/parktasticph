@@ -8,6 +8,7 @@ const TheLgu = lazy(() => import("../pages/TheLgu"));
 const ErrorPage = lazy(() => import("../pages/ErrorPage"));
 const TheTeam = lazy(() => import("../pages/TheTeam"));
 const TheBusiness = lazy(() => import("../pages/TheBusiness"));
+const CaseStudy = lazy(() => import('../pages/CaseStudy'));
 const Pager = lazy(() => import("../components/Common/Pager"));
 
 const router = createBrowserRouter([
@@ -30,6 +31,11 @@ const router = createBrowserRouter([
       {
         path: "/the-business",
         element: <Pager content={<TheBusiness />} title="The Business" />,
+      },
+      ,
+      {
+        path: "/case-study",
+        element: <Pager content={<CaseStudy />} title="Manila Zoo" />,
       },
     ],
   },
