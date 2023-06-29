@@ -19,7 +19,7 @@ export default function CaseStudy() {
             className="border-span"
           >
             <div className="case-study-header">
-              <img src={logoTransparent} alt="logo-transparent" /><div className="case-connector">X</div>MANILA ZOO:
+              PARKTASTIC PH X MANILA ZOO:
             </div>
             <span>Taming the Parking Beast!</span>
           </div>

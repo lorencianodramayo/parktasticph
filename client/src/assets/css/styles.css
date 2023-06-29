@@ -644,7 +644,7 @@
 
   .case-study-car-green-header {
     background-size: 171px;
-    font-size: 30px;
+    font-size: 27px;
     height: auto;
   }
 
@@ -827,8 +827,7 @@
   }
 
   .case-study-header {
-    display: block;
-    line-height: 40px;
+    line-height: 11px;
   }
 
   #case-study-frame-container {
